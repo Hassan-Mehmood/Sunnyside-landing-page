@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 83.125rem;
+  margin: 0 auto;
+  width: 92%;
+}
+
+.header-wrapper {
+  min-height: 49.125rem;
+  background-image: url("../../images/desktop/image-header.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom center;
+  background-color: #3ebfff;
+}
+.header-wrapper .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 5.625rem;
+}
+.header-wrapper .nav-links-desktop a {
+  font-size: 18px;
+  font-family: "Barlow", sans-serif;
+  color: hsl(0deg, 0%, 100%);
+  text-decoration: none;
+  margin-right: 3.0625rem;
+}
+.header-wrapper .nav-links-desktop .btn-nav {
+  font-family: "Fraunces", serif;
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(212deg, 27%, 19%);
+  padding: 1rem 1.9rem;
+  margin: 0;
+  border-radius: 1.9rem;
+}
+.header-wrapper .nav-links-desktop .btn-nav:hover {
+  color: hsl(0deg, 0%, 100%);
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.header-wrapper .hero-text {
+  font-size: 4rem;
+  font-family: "Fraunces", serif;
+  color: hsl(0deg, 0%, 100%);
+  text-align: center;
+  padding-top: 6.875rem;
+}
+.header-wrapper .icon-down {
+  margin: 0 auto;
+  padding: 5.25rem 0 0 0;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,49 @@
+.header-wrapper {
+  min-height: 49.125rem;
+  background-image: url("../../images/desktop/image-header.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom center;
+  background-color: $header-bg;
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 5.625rem;
+  }
+
+  .nav-links-desktop {
+    a {
+      font-size: 18px;
+      font-family: $barlow;
+      color: $white;
+      text-decoration: none;
+      margin-right: 3.0625rem;
+    }
+    .btn-nav {
+      font-family: $fraunces;
+      background-color: $white;
+      color: $VeryDarkDesaturatedBlue;
+      padding: 1rem 1.9rem;
+      margin: 0;
+      border-radius: 1.9rem;
+      &:hover {
+        color: $white;
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
+
+  .hero-text {
+    font-size: 4rem;
+    font-family: $fraunces;
+    color: $white;
+    text-align: center;
+    padding-top: 6.875rem;
+  }
+
+  .icon-down {
+    margin: 0 auto;
+    padding: 5.25rem 0 0 0;
+  }
+}
