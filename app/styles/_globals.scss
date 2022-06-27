@@ -24,3 +24,9 @@ h4 {
   margin: 0 auto;
   width: 92%;
 }
+
+.hide-for-tablet {
+  @include devices(tablet-down) {
+    display: none;
+  }
+}

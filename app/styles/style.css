@@ -26,6 +26,12 @@ h4 {
   width: 92%;
 }
 
+@media only screen and (max-width: 43.25em) {
+  .hide-for-tablet {
+    display: none;
+  }
+}
+
 .header-wrapper {
   min-height: 49.125rem;
   background-image: url("../../images/desktop/image-header.jpg");
