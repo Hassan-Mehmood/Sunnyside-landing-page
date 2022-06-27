@@ -46,12 +46,20 @@ h4 {
   background-position: center;
   background-color: #3ebfff;
 }
+@media only screen and (max-width: 43.1875em) {
+  .header-wrapper {
+    background-image: url("../../images/mobile/image-header.jpg");
+  }
+}
 .header-wrapper .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-height: 5.625rem;
   position: relative;
+}
+.header-wrapper .nav .menu-icon {
+  cursor: pointer;
 }
 .header-wrapper .nav .nav-links a {
   font-size: 18px;
@@ -74,7 +82,6 @@ h4 {
 }
 @media only screen and (max-width: 43.1875em) {
   .header-wrapper .nav .nav-links {
-    visibility: hidden;
     position: absolute;
     top: 100px;
     left: 0;
@@ -85,6 +92,8 @@ h4 {
     flex-direction: column;
     align-items: center;
     background-color: hsl(0deg, 0%, 100%);
+    visibility: hidden;
+    opacity: 0;
   }
   .header-wrapper .nav .nav-links a {
     color: hsl(232deg, 10%, 55%);
@@ -93,6 +102,10 @@ h4 {
   }
   .header-wrapper .nav .nav-links a:first-child {
     padding-top: 2.8125rem;
+  }
+  .header-wrapper .nav .nav-links.visible {
+    visibility: visible;
+    opacity: 1;
   }
   .header-wrapper .nav .nav-links .btn-nav {
     background-color: hsl(51deg, 100%, 49%);
@@ -104,18 +117,23 @@ h4 {
   }
 }
 .header-wrapper .hero-text {
-  font-size: 4rem;
+  font-size: clamp(3rem, 10vw, 4rem);
   font-family: "Fraunces", serif;
   color: hsl(0deg, 0%, 100%);
+  letter-spacing: 3px;
   text-align: center;
-  padding-top: 6.875rem;
+  padding: 6.875rem 1rem 0;
 }
 .header-wrapper .icon-down {
   margin: 0 auto;
   padding: 5.25rem 0 0 0;
 }
-@media only screen and (max-width: 43.1875em) {
-  .header-wrapper .visible {
-    visibility: visible;
-  }
+
+.grid .text-col {
+  text-align: center;
+  font-size: 18px;
+  padding: 0 1.5rem;
+}
+.grid .text-col h3 {
+  font-size: 2.5rem;
 }/*# sourceMappingURL=style.css.map */
