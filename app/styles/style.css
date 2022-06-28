@@ -226,19 +226,6 @@ h4 {
 .text-on-img-container {
   min-height: 29.375rem;
 }
-@media only screen and (min-width: 43.25em) {
-  .text-on-img-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    min-height: 44.1875rem;
-  }
-  .text-on-img-container .graphic-design-wrapper {
-    background-image: url("../../images/desktop/image-graphic-design.jpg");
-  }
-  .text-on-img-container .graphic-design-wrapper {
-    background-image: url("../../images/desktop/image-graphic-design.jpg");
-  }
-}
 .text-on-img-container .graphic-design-wrapper {
   background-image: url("../../images/mobile/image-graphic-design.jpg");
   background-repeat: no-repeat;
@@ -273,4 +260,73 @@ h4 {
   font-family: "Barlow", sans-serif;
   color: hsl(198deg, 62%, 26%);
   margin-bottom: 3rem;
+}
+@media only screen and (min-width: 43.25em) {
+  .text-on-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 44.1875rem;
+  }
+  .text-on-img-container .graphic-design-wrapper {
+    background-image: url("../../images/desktop/image-graphic-design.jpg");
+  }
+  .text-on-img-container .graphic-design-wrapper {
+    background-image: url("../../images/desktop/image-graphic-design.jpg");
+  }
+}
+
+.testimonials {
+  text-align: center;
+  padding: 3.1rem 2rem;
+}
+@media only screen and (min-width: 43.25em) {
+  .testimonials {
+    padding-top: 10rem;
+  }
+}
+.testimonials .col {
+  max-width: 20.3125rem;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+.testimonials .testimonials-intro {
+  font-size: 1.25rem;
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  color: hsl(232deg, 10%, 55%);
+  letter-spacing: 2px;
+}
+.testimonials .client-msg {
+  margin-bottom: 2rem;
+  font-family: "Barlow", sans-serif;
+  color: hsl(213deg, 9%, 39%);
+}
+.testimonials .client-name {
+  margin-bottom: 0.7rem;
+  font-family: "Barlow", sans-serif;
+}
+.testimonials .client-role {
+  color: hsl(232deg, 10%, 55%);
+  font-family: "Barlow", sans-serif;
+}
+.testimonials img {
+  border-radius: 50%;
+  max-width: 3.1rem;
+  margin: 3.23rem auto 1.75rem;
+}
+@media only screen and (min-width: 43.25em) {
+  .testimonials .testimonials-col-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  .testimonials .testimonials-col-container .col {
+    max-width: 20.8125rem;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -101,17 +101,6 @@
 
 .text-on-img-container {
   min-height: 29.375rem;
-  @include devices(tablet-up) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    .graphic-design-wrapper {
-      background-image: url("../../images/desktop/image-graphic-design.jpg");
-    }
-    .graphic-design-wrapper {
-      background-image: url("../../images/desktop/image-graphic-design.jpg");
-    }
-    min-height: 44.1875rem;
-  }
 
   .graphic-design-wrapper {
     background-image: url("../../images/mobile/image-graphic-design.jpg");
@@ -151,5 +140,17 @@
         margin-bottom: 3rem;
       }
     }
+  }
+
+  @include devices(tablet-up) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .graphic-design-wrapper {
+      background-image: url("../../images/desktop/image-graphic-design.jpg");
+    }
+    .graphic-design-wrapper {
+      background-image: url("../../images/desktop/image-graphic-design.jpg");
+    }
+    min-height: 44.1875rem;
   }
 }

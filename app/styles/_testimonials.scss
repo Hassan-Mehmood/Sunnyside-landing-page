@@ -1,0 +1,58 @@
+.testimonials {
+  text-align: center;
+  padding: 3.1rem 2rem;
+  @include devices(tablet-up) {
+    padding-top: 10rem;
+  }
+
+  .col {
+    max-width: 20.3125rem;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+  }
+
+  .testimonials-intro {
+    font-size: 1.25rem;
+    font-family: $fraunces;
+    text-transform: uppercase;
+    color: $DarkGrayishBlue;
+    letter-spacing: 2px;
+  }
+
+  .client-msg {
+    margin-bottom: 2rem;
+    font-family: $barlow;
+    color: $VeryDarkGrayishBlue;
+  }
+  .client-name {
+    margin-bottom: 0.7rem;
+    font-family: $barlow;
+  }
+  .client-role {
+    color: $DarkGrayishBlue;
+    font-family: $barlow;
+  }
+
+  img {
+    border-radius: 50%;
+    max-width: 3.1rem;
+    margin: 3.23rem auto 1.75rem;
+  }
+
+  .testimonials-col-container {
+    @include devices(tablet-up) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+      gap: 2rem;
+      margin-top: 2rem;
+      .col {
+        max-width: 20.8125rem;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.5;
+      }
+    }
+  }
+}
