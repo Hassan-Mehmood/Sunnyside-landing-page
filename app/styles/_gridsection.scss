@@ -1,4 +1,29 @@
 .grid {
+  @include devices(tablet-up) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .img-col {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 19.4375rem;
+  }
+  .img-col.img-transform-brand {
+    background-image: url("../../images/mobile/image-transform.jpg");
+    @include devices(tablet-up) {
+      background-image: url("../../images/desktop/image-transform.jpg");
+      order: 2;
+    }
+  }
+
+  .img-col.img-stand-out {
+    background-image: url("../../images/mobile/image-stand-out.jpg");
+    @include devices(tablet-up) {
+      background-image: url("../../images/desktop/image-stand-out.jpg");
+    }
+  }
+
   .text-col {
     text-align: center;
     font-size: 1.125rem;
@@ -21,6 +46,21 @@
       color: black;
       text-decoration: none;
       text-transform: uppercase;
+    }
+
+    @include devices(tablet-up) {
+      text-align: left;
+      width: 27.0625rem;
+      margin: auto;
+      padding: 0;
+      h3 {
+        padding: 10.3125rem 0 0;
+        font-size: 3.5rem;
+      }
+      .btn {
+        display: inline-block;
+        margin-bottom: 10rem;
+      }
     }
   }
 }

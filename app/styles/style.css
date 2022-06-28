@@ -129,6 +129,35 @@ h4 {
   padding: 5.25rem 0 0 0;
 }
 
+@media only screen and (min-width: 43.25em) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.grid .img-col {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 19.4375rem;
+}
+.grid .img-col.img-transform-brand {
+  background-image: url("../../images/mobile/image-transform.jpg");
+}
+@media only screen and (min-width: 43.25em) {
+  .grid .img-col.img-transform-brand {
+    background-image: url("../../images/desktop/image-transform.jpg");
+    order: 2;
+  }
+}
+.grid .img-col.img-stand-out {
+  background-image: url("../../images/mobile/image-stand-out.jpg");
+}
+@media only screen and (min-width: 43.25em) {
+  .grid .img-col.img-stand-out {
+    background-image: url("../../images/desktop/image-stand-out.jpg");
+  }
+}
 .grid .text-col {
   text-align: center;
   font-size: 1.125rem;
@@ -150,6 +179,22 @@ h4 {
   color: black;
   text-decoration: none;
   text-transform: uppercase;
+}
+@media only screen and (min-width: 43.25em) {
+  .grid .text-col {
+    text-align: left;
+    width: 27.0625rem;
+    margin: auto;
+    padding: 0;
+  }
+  .grid .text-col h3 {
+    padding: 10.3125rem 0 0;
+    font-size: 3.5rem;
+  }
+  .grid .text-col .btn {
+    display: inline-block;
+    margin-bottom: 10rem;
+  }
 }
 
 .transform-brand-wrapper .btn::before {
