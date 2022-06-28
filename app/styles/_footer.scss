@@ -1,0 +1,42 @@
+.footer-container {
+  background-color: $DarkModerateCyan;
+  padding-top: 3.3rem;
+  padding-bottom: 3rem;
+  .logo {
+    margin: 0 auto;
+  }
+
+  .links {
+    margin: 2rem 0 3rem;
+    text-align: center;
+    a {
+      display: inline-block;
+      color: $DarkDesaturatedCyan;
+      font-family: $barlow;
+      text-decoration: none;
+      margin: 0 auto;
+      &:not(:last-child) {
+        margin-right: 5.0625rem;
+      }
+
+      &:hover,&:focus {
+        color: $white;
+      }
+    }
+    @include devices(tablet-up) {
+      margin-bottom: 5.4375rem;
+    }
+  }
+
+  .social-links {
+    text-align: center;
+    cursor: pointer;
+    img {
+      display: inline-block;
+
+      &:not(:last-child) {
+        margin-right: 1.375rem;
+      }
+    }
+  }
+}

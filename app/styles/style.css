@@ -251,6 +251,11 @@ h4 {
   text-align: center;
   padding: 0 1.2rem;
 }
+@media only screen and (min-width: 43.25em) {
+  .text-on-img-container .text-on-img-section .text {
+    font-size: 1.125rem;
+  }
+}
 .text-on-img-container .text-on-img-section .text h3 {
   font-size: 2rem;
   font-family: "Fraunces", serif;
@@ -302,6 +307,11 @@ h4 {
   font-family: "Barlow", sans-serif;
   color: hsl(213deg, 9%, 39%);
 }
+@media only screen and (min-width: 43.25em) {
+  .testimonials .client-msg {
+    font-size: 1.125rem;
+  }
+}
 .testimonials .client-name {
   margin-bottom: 0.7rem;
   font-family: "Barlow", sans-serif;
@@ -314,6 +324,11 @@ h4 {
   border-radius: 50%;
   max-width: 3.1rem;
   margin: 3.23rem auto 1.75rem;
+}
+@media only screen and (min-width: 43.25em) {
+  .testimonials img {
+    max-width: 4rem;
+  }
 }
 @media only screen and (min-width: 43.25em) {
   .testimonials .testimonials-col-container {
@@ -340,4 +355,45 @@ h4 {
   .gallery-imgs {
     grid-template-columns: repeat(4, 1fr);
   }
+}
+
+.footer-container {
+  background-color: hsl(168deg, 34%, 41%);
+  padding-top: 3.3rem;
+  padding-bottom: 3rem;
+}
+.footer-container .logo {
+  margin: 0 auto;
+}
+.footer-container .links {
+  margin: 2rem 0 3rem;
+  text-align: center;
+}
+.footer-container .links a {
+  display: inline-block;
+  color: hsl(167deg, 40%, 24%);
+  font-family: "Barlow", sans-serif;
+  text-decoration: none;
+  margin: 0 auto;
+}
+.footer-container .links a:not(:last-child) {
+  margin-right: 5.0625rem;
+}
+.footer-container .links a:hover, .footer-container .links a:focus {
+  color: hsl(0deg, 0%, 100%);
+}
+@media only screen and (min-width: 43.25em) {
+  .footer-container .links {
+    margin-bottom: 5.4375rem;
+  }
+}
+.footer-container .social-links {
+  text-align: center;
+  cursor: pointer;
+}
+.footer-container .social-links img {
+  display: inline-block;
+}
+.footer-container .social-links img:not(:last-child) {
+  margin-right: 1.375rem;
 }/*# sourceMappingURL=style.css.map */

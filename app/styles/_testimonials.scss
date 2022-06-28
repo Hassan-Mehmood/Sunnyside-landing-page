@@ -24,6 +24,11 @@
     margin-bottom: 2rem;
     font-family: $barlow;
     color: $VeryDarkGrayishBlue;
+
+    @include devices(tablet-up) {
+      
+      font-size: 1.125rem;
+    }
   }
   .client-name {
     margin-bottom: 0.7rem;
@@ -38,6 +43,9 @@
     border-radius: 50%;
     max-width: 3.1rem;
     margin: 3.23rem auto 1.75rem;
+    @include devices(tablet-up) {
+      max-width: 4rem;
+    }
   }
 
   .testimonials-col-container {

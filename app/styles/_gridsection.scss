@@ -128,7 +128,9 @@
       margin: auto;
       text-align: center;
       padding: 0 1.2rem;
-
+      @include devices(tablet-up) {
+        font-size: 1.125rem;
+      }
       h3 {
         font-size: 2rem;
         font-family: $fraunces;
