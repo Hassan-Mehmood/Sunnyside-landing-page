@@ -329,4 +329,15 @@ h4 {
     margin-right: auto;
     line-height: 1.5;
   }
+}
+
+.gallery-imgs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 10rem;
+}
+@media only screen and (min-width: 43.25em) {
+  .gallery-imgs {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }/*# sourceMappingURL=style.css.map */
