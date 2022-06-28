@@ -50,9 +50,9 @@
 
     @include devices(tablet-up) {
       text-align: left;
-      width: 27.0625rem;
+      max-width: 41.063rem;
       margin: auto;
-      padding: 0;
+      padding: 0 1.5625rem;
       h3 {
         padding: 10.3125rem 0 0;
         font-size: 3.5rem;
@@ -76,6 +76,9 @@
       background-color: $Yellow;
       opacity: 0.3;
     }
+    &:hover:before {
+      opacity: 0.7;
+    }
   }
 }
 .stand-out-wrapper {
@@ -88,6 +91,63 @@
       bottom: 0px;
       background-color: $SoftRed;
       opacity: 0.3;
+    }
+    &:hover:before,
+    &:focus:before {
+      opacity: 0.7;
+    }
+  }
+}
+
+.text-on-img-container {
+  min-height: 29.375rem;
+  @include devices(tablet-up) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .graphic-design-wrapper {
+      background-image: url("../../images/desktop/image-graphic-design.jpg");
+    }
+    .graphic-design-wrapper {
+      background-image: url("../../images/desktop/image-graphic-design.jpg");
+    }
+    min-height: 44.1875rem;
+  }
+
+  .graphic-design-wrapper {
+    background-image: url("../../images/mobile/image-graphic-design.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .photography-wrapper {
+    background-image: url("../../images/mobile/image-photography.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .text-on-img-section {
+    min-height: inherit;
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      min-height: inherit;
+      text-align: center;
+      padding: 0 1.2rem;
+
+      h3 {
+        font-size: 2rem;
+        font-family: $fraunces;
+        margin-bottom: 2rem;
+      }
+      p {
+        font-family: $barlow;
+        color: $DarkBlue;
+        margin-bottom: 3rem;
+      }
     }
   }
 }
